@@ -1,0 +1,30 @@
+ALGORITHM communs
+VAR
+    sum,i,j,k : INTEGER:=0 ;
+    arr1,arr2 : ARRAY_OF_INTEGER[10];
+BEGIN
+    
+    FOR i FROM 0 TO arr1.length-1 DO
+        hash.insert(<arr1[i], 1>)
+        END_FOR
+
+    FOR i FROM 0 TO arr2.length-1 DO 
+        IF(hash.lookup(arr2[j])=TRUE) THEN 
+            hash.insert(<arr2[j],2>)
+        ELSE
+    hash.insert(<arr2[j],1>)  
+    END_IF  
+        END_FOR
+
+FOR k FROM 0 TO arr1.length-1 DO
+IF(hash.get(arr1[k])=2) THEN 
+sum:= sum+ arr1[k]*2
+END_IF
+END_FOR
+WRITE(sum)
+
+
+
+        
+    
+END

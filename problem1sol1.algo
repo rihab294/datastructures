@@ -1,0 +1,19 @@
+problem1 solution1
+ALGORITHM communs
+VAR
+    sum,i,j : INTEGER:=0 ;
+    arr1,arr2 : ARRAY_OF_INTEGER[10];
+BEGIN
+    
+    FOR i FROM 0 TO arr1.length-1 DO
+        
+        IF (arr1[i] in arr2) THEN 
+            sum := sum+arr1[i]*2;
+        END_IF
+    
+        END_FOR
+        WRITE(sum)
+        
+    
+END
+

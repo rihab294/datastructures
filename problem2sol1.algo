@@ -1,0 +1,21 @@
+problem2 solution1
+ALGORITHM distinct
+VAR
+    dist,i,j : INTEGER:=0 ;
+    arr1,arr2 : ARRAY_OF_INTEGER[10];
+BEGIN
+    FOR i FROM 0 TO arr1.length-1 DO
+        IF (arr1[i] NOT in arr2) THEN 
+        dist := dist+arr1[i]
+        END_IF
+        END_FOR
+    FOR j FROM 0 TO arr2.length-1 DO
+        IF (arr2[j] NOT in arr1) THEN 
+        dist := dist+arr2[j]
+        END_IF
+        END_FOR
+        WRITE(dist)
+    
+END
+ 
+problem2 solution2
